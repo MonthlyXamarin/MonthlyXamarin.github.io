@@ -6,7 +6,7 @@
 <body>
 	<main class="container">
 		<section class="about">
-			<img src="{{ "/assets/portfolio.png" | relative_url }}" alt="{{ site.plainwhite.name }}">
+			<img src="{{ "/assets/monthlyxamarin_blue_border.png" | relative_url }}" alt="{{ site.plainwhite.name }}">
 			<h2>{{ site.plainwhite.name }}</h2>
 			<p class="tagline">{{ site.plainwhite.tagline }}</p>
 			<ul class="social">
@@ -18,6 +18,9 @@
                 {%- endif -%}
                 {%- if site.plainwhite.social_links.twitter -%}
                 <a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}"><li><i class="icon-twitter-squared"></i></li></a>
+				{%- endif -%}
+				{%- if site.plainwhite.social_links.facebook -%}
+                <a href="https://facebook.com/{{ site.plainwhite.social_links.facebook }}"><li><i class="icon-facebook-squared"></i></li></a>
                 {%- endif -%}
 			</ul>
 			<p>&copy; 2019</p>
