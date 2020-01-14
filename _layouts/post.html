@@ -7,13 +7,16 @@ layout: default
     <h2 class="post-title">{{ page.title | escape }}</h2>
   </a>
   <div class="post-meta">
+    <div class="post-date"><i class="icon-calendar"></i>{{ page.date | date: date_format }}</div>
+    <div> <i class="fa fa-user" style="color:gray;"></i> {{site.title}}</div>
     <i class="fa fa-tags" style="color:gray;"></i>
     <ul class="post-categories">
       {%- for tag in page.categories -%}
       <li>{{ tag }}</li>
       {%- endfor -%}
     </ul>
-    <div class="post-date"><i class="icon-calendar"></i>{{ page.date | date: date_format }}</div>
+    
+    
   </div>
   <div class="post">
     {{ content }}

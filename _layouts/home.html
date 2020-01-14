@@ -22,14 +22,16 @@ layout: default
     </a>
     <div class="post-meta">
       
-        <i class="fa fa-tags" style="color:gray;"></i>
+      <div class="post-date"><i class="icon-calendar"></i>{{ post.date | date: date_format }}</div>
+      <div> <i class="fa fa-user" style="color:gray;"></i> {{site.title}}</div>
         <ul class="post-categories">
+          <i class="fa fa-tags" style="color:gray;"></i>
           {%- for tag in post.categories -%}
           <li>{{ tag }}</li>
           {%- endfor -%}
         </ul>
       
-      <div class="post-date"><i class="icon-calendar"></i>{{ post.date | date: date_format }}</div>
+      
     </div>
     <div class="post">
       {%- if site.show_excerpts -%}
