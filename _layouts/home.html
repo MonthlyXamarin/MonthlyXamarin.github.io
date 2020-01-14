@@ -21,6 +21,7 @@ layout: default
       <h2 class="post-title">{{ post.title | escape }}</h2>
     </a>
     <div class="post-meta">
+      <i class="fa fa-tags" style="color:gray;"></i>
       <ul class="post-categories">
         {%- for tag in post.categories -%}
         <li>{{ tag }}</li>
